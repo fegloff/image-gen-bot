@@ -10,10 +10,12 @@ By default, the bot generates <b>${config.sessionDefault.numImages} image(s)</b>
 /genEn [text] - Generates an Image from an enhanced prompt
 
 <b>Edit an Image</b>
-To edit the image using OpenAi API, reply to a message in our chat with a picture and write the prompt. 
+To edit the image using OpenAi API, reply to a message in our chat with a picture and 
+write the prompt. Also, you can upload a photo and write the prompt in the caption.
 
 <b>Generate images variations</b>
-To generates variations of an image using OpenAi API, reply to a message in our chat with a picture and write the number of variations (max 10). 
-
+To generates variations of an image using OpenAi API, reply to a message in our chat 
+with a picture and write the number of variations (max 10). Also, you can upload a 
+photo and write the number of variations in the caption.
 `,
 };

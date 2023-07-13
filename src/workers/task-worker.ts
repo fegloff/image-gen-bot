@@ -1,5 +1,5 @@
 import { Worker, Job } from 'bullmq';
-import { config } from '../config';
+import { config } from '../config'; 
 import { imgGen, imgGenEnhanced, alterImg } from '../controller/botController'
 
 export interface WorkerPayload {
@@ -14,7 +14,6 @@ export const taskWorker = new Worker<WorkerPayload,boolean>('botTask', async (jo
   switch(job.name) {
     case 'gen':
       await imgGen(job.data)
-      console.log('gen',job.data);
       break
     case 'genEn':
       await imgGenEnhanced(job.data)

@@ -1,5 +1,5 @@
 {
-  "name": "img-gen",
+  "name": "image-gen-bot",
   "version": "1.0.0",
   "description": "Image AI generator Telegram bot",
   "main": "dist/bot.js",

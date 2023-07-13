@@ -187,13 +187,11 @@ process.on("SIGINT", async () => {
 if (config.isProduction) {
   const app = express();
   app.use(express.json());
-  // app.use(`/${bot.token}`, webhookCallback(bot, "express"));
   app.use(webhookCallback(bot, "express"));
   app.use((_req, res) => res.status(200).send());
 
   const PORT = config.port;
   //@ts-ignore
-  // app.listen(PORT, () => console.log(`listening on port ${PORT}`));
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`Bot listening on port ${PORT}`);
   });
